@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             xmlns:local="clr-namespace:SkiaTest"
+             x:Class="SkiaTest.MainPage">
+
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<local:Gauge Grid.Row="2"
+            x:Name="GaugeControl" 
+            WidthRequest="500" 
+            HeightRequest="500" 
+            VerticalOptions="Start"
+            HighlightRangeStartValue="0"
+            HighlightRangeEndValue="100"
+            NeedleColor="Brown"
+            ValueFontSize="35"                       
+            UnitsText="%" />
+
+
+		<Label BindingContext="{x:Binding SNSRState}"
+            Grid.Row="0">
+        </Label>
+
+		<Label Grid.Row="0"
+            x:Name="PMP1State">
+		</Label>
+
+		<Label Grid.Row="0"
+            x:Name="PMP2State">
+		</Label>
+
+		<Label Grid.Row="0"
+            x:Name="P1PWRState">
+		</Label>
+		<Label Grid.Row="0"
+            x:Name="P2PWRState">
+		</Label>
+
+	</Grid>
+
+</ContentPage>
