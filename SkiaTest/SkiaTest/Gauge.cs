@@ -142,7 +142,7 @@ namespace SkiaTest
 		public char SensorState
 		{
 			get { return (char)GetValue(SensorStateProperty); }
-			set { SetValue(ValueFontSizeProperty, value); }
+			set { SetValue(SensorStateProperty, value); }
 		}
 // --------------------------------------------------------------------------------------------------------------------------
 /*
@@ -152,7 +152,7 @@ namespace SkiaTest
 		public char PMP1State
 		{
 			get { return (char)GetValue(PMP1StateProperty); }
-			set { SetValue(ValueFontSizeProperty, value); }
+			set { SetValue(PMP1StateProperty, value); }
 		}
 // --------------------------------------------------------------------------------------------------------------------------
 
@@ -162,7 +162,7 @@ namespace SkiaTest
 		public char PMP2State
 		{
 			get { return (char)GetValue(PMP2StateProperty); }
-			set { SetValue(ValueFontSizeProperty, value); }
+			set { SetValue(PMP2StateProperty, value); }
 		}
 // --------------------------------------------------------------------------------------------------------------------------
 		public static readonly BindableProperty P1PWRStateProperty =
@@ -171,7 +171,7 @@ namespace SkiaTest
 		public char P1PWRState
 		{
 			get { return (char)GetValue(P1PWRStateProperty); }
-			set { SetValue(ValueFontSizeProperty, value); }
+			set { SetValue(P1PWRStateProperty, value); }
 		}
 
 // --------------------------------------------------------------------------------------------------------------------------
@@ -181,7 +181,7 @@ namespace SkiaTest
 		public char P2PWRState
 		{
 			get { return (char)GetValue(P2PWRStateProperty); }
-			set { SetValue(ValueFontSizeProperty, value); }
+			set { SetValue(P2PWRStateProperty, value); }
 		}
 
 // --------------------------------------------------------------------------------------------------------------------------
